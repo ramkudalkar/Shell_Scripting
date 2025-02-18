@@ -1,73 +1,108 @@
-# Shell_Scripting
+# Git Commands Guide
 
-Git Commands
-This Gist contains all the useful commands for Git
-Build Status
-
+## Version Control System (VCS)
 Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
 
-If you are a developer and want to keep every version of your code/project (which you would most certainly want to), a Version Control System (VCS) is a very wise thing to use.
+If you are a developer and want to keep every version of your code/project (which you most certainly would), a Version Control System (VCS) is a very wise tool to use.
 
-All the commands used for Git
-Compatibility with GitHub
-✨Magic ✨
-Commands
-Set global username and email for Git (Locally).
+## Git Commands for GitHub Compatibility
 
-git config --global user.name "<your username>"
-git config --global user.email "<your email>"
-Initialise an empty Git Repository
+### **Set Global Username and Email for Git (Locally)**
+```sh
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+```
 
+### **Initialize an Empty Git Repository**
+```sh
 git init
-Clone an existing Git Repository
+```
 
-git clone <repository URL>
-Add file/stage to git
+### **Clone an Existing Git Repository**
+```sh
+git clone <repository_url>
+```
 
-git add <filename>
-Add all the files to git
+### **Add Files to Git (Staging)**
+- Add a specific file:
+  ```sh
+  git add <filename>
+  ```
+- Add all files:
+  ```sh
+  git add .
+  ```
 
-git add .
-Commit all the staged files to git
+### **Commit Staged Files to Git**
+```sh
+git commit -m "Your commit message"
+```
 
-git commit -m "<your commit message>"
-Restore the file from being modified to Tracked
-
+### **Restore a File from Being Modified to Tracked**
+```sh
 git restore <filename>
-git checkout <filename>
-Show the status of your Git respository
+```
 
+### **Show the Status of Your Git Repository**
+```sh
 git status
-Show the branches of your git repository
+```
 
+### **Show the Branches of Your Git Repository**
+```sh
 git branch
-Checkout to a new branch
+```
 
-git checkout -b <branch name>
-Checkout to an existing branch
+### **Checkout to a New Branch**
+```sh
+git checkout -b <new-branch-name>
+```
 
-git checkout <branch name>
-Remove a branch from Git
+### **Checkout to an Existing Branch**
+```sh
+git checkout <branch-name>
+```
 
-git branch -d <branch name>
-Show remote origin URL
+### **Remove a Branch from Git**
+```sh
+git branch -d <branch-name>
+```
 
+### **Show Remote Origin URL**
+```sh
 git remote -v
-Add remote origin URL
+```
 
-git remote add origin <your remote git URL>
-Remove remote origin URL
+### **Add Remote Origin URL**
+```sh
+git remote add origin <repository_url>
+```
 
-git remote remove origin 
-Fetch all the remote branches
+### **Remove Remote Origin URL**
+```sh
+git remote remove origin
+```
 
+### **Fetch All Remote Branches**
+```sh
 git fetch
-Push your local changes to remote branch
+```
 
-git push origin <branch name>
-Pull your remote changes to local branch
+### **Push Your Local Changes to Remote Branch**
+```sh
+git push origin <branch-name>
+```
 
-git pull origin <branch name>
-Check you git commits and logs
+### **Pull Your Remote Changes to Local Branch**
+```sh
+git pull origin <branch-name>
+```
 
+### **Check Git Commits and Logs**
+```sh
 git log
+```
+
+---
+This guide serves as a reference for essential Git commands. Happy coding! 🚀
+
